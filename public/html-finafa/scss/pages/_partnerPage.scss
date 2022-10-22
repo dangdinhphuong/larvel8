@@ -1,0 +1,62 @@
+.PartnerPage {
+    &__header {
+        padding: 80px 0;
+        &-label {
+            text-align: center;
+
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            color: #214475;
+            font-size: 2.4rem;
+            line-height: 1em;
+            margin: 0;
+            position: relative;
+        }
+        &-hr {
+            background-color: #cd950c;
+            width: 30px;
+            height: 5px;
+            border-radius: 5px;
+            margin: 15px auto 25px auto;
+        }
+        &-desc {
+            text-align: center;
+            color: #999999;
+            line-height: 1.8em;
+        }
+    }
+    &__body {
+        padding-bottom: 60px;
+        table {
+            width: 100%;
+            max-width: 100%;
+            margin-bottom: 20px;
+        }
+        .table-bordered {
+            border: 1px solid #ddd;
+        }
+        td {
+            width: 25%;
+            padding: 8px;
+            line-height: 1.42857143;
+            vertical-align: top;
+            display: table-cell;
+            img {
+                height: auto !important;
+                max-width: 100%;
+                vertical-align: middle;
+            }
+        }
+        td h3 {
+            padding-top: 10px;
+            padding-left: 5px;
+            span {
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+
+                font-weight: bold;
+                font-size: 24px;
+            }
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import "global";
+
+@import "animation";
+// components
+// @import "./components/LinhVucKinhDoanh.scss";
+
+@import "./components/header";
+@import "./components/signUpFor";
+
+@import "./components/bannerSlide";
+@import "./components/footer";
+@import "./components/breadcrumb";
+@import "./components/pagination";
+@import "./components/btnScrollToTop";
+
+// pages
+@import "./pages/home";
+@import "./pages/contactUsPage";
+@import "./pages/partnerPage";
+@import "./pages/introducePage";
+@import "./pages/productPage";
+@import "./pages/recruitmentPage";
+@import "./pages/productDetailPage";
+@import "./pages/newPage";
+@import "./pages/newDetailPage";

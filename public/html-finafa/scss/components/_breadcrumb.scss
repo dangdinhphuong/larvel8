@@ -1,0 +1,51 @@
+.Breadcrumb {
+    &__banner {
+        position: relative;
+        &-image {
+            width: 100%;
+            height: 250px;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        &-desc {
+            position: absolute;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.3);
+            flex-direction: column;
+        }
+        &-label {
+            font-size: 3.2rem;
+            font-weight: 800;
+            margin: 0 0 0.23em;
+            color: #fff;
+        }
+        &-link {
+            a {
+                text-decoration: none;
+                color: #fff;
+
+                font-size: 1.2rem;
+                margin-right: 5px;
+                &.active {
+                    color: #cd950c;
+                }
+            }
+            span {
+                color: #fff;
+                padding: 0 5px;
+                font-size: 18px;
+            }
+        }
+    }
+}

@@ -1,0 +1,74 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Google+Sans_old:400,500,700|Google+Sans+Text:400");
+@import url("https://fonts.googleapis.com/css?family=Google+Sans+Text:400&text=%E2%86%90%E2%86%92%E2%86%91%E2%86%93");
+
+html {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+    font-family: "Roboto", sans-serif;
+    //   background-color: #fff;
+    font-size: 14px;
+    font-size: 0.93333rem;
+    -webkit-font-smoothing: antialiased;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+@media (max-width: 575px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+    .container {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+}
+
+@media (min-width: 992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container {
+        width: 1300px;
+        max-width: 1300px;
+    }
+}
+@media (min-width: 1640px) {
+    .container {
+        width: 1540px;
+        max-width: 1540px;
+    }
+}

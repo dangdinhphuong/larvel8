@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- Bootstrap core CSS -->
+        <link
+            href="./../vendor/bootstrap-4.6.1/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../vendor/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../vendor/slick/slick-theme.css"
+        />
+
+        <!-- jquery -->
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.6.0.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-3.3.2.js"
+        ></script>
+
+        <link rel="stylesheet" href="./../css/app.css" />
+
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="./../vendor/font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <section class="topbar">
+            <div
+                class="topbar__box container d-flex flex-column flex-md-row justify-content-md-end align-items-center"
+            >
+                <div class="topbar__box-item">
+                    <i class="fa fa-phone-square"></i>
+                    <span> Hotline: (+84)28 5411 1557 </span>
+                </div>
+                <div class="topbar__box-item">
+                    <i class="fa fa-envelope"></i>
+                    <span>Email: info@asiagroup-vn.com </span>
+                </div>
+                <div class="topbar__box-item">
+                    <i class="fa fa-language"></i>
+                    <span> English </span>
+                </div>
+            </div>
+        </section>
+
+        <header class="navCustom" id="navCustom">
+            <div class="navCustom__box container d-flex">
+                <div class="navCustom__box-logo mr-auto">
+                    <a href="/">
+                        <img src="./../images/logo.png" alt="" />
+                    </a>
+                </div>
+                <div
+                    class="navCustom__box-link d-none d-lg-flex align-items-center"
+                >
+                    <ul>
+                        <li class="link__item active">
+                            <a href="/" class="">Trang chủ</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Giới thiệu</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Sản phẩm</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Tin tức</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Đối tác</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Liên hệ</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Tuyển dụng</a>
+                        </li>
+
+                        <li class="link__search">
+                            <button
+                                onclick="handleHeaderSearch()"
+                                class="btn link__search-button"
+                            >
+                                <i class="fa fa-search" aria-hidden="true"></i>
+                            </button>
+
+                            <div
+                                class="link__search-form"
+                                id="link__search-form"
+                            >
+                                <form action="" class="form">
+                                    <div class="form__input">
+                                        <input
+                                            class="form-control"
+                                            type="text"
+                                            placeholder="Nhập tìm kiếm..."
+                                        />
+                                    </div>
+                                    <button class="form__icon btn">
+                                        <i
+                                            class="fa fa-search"
+                                            aria-hidden="true"
+                                        ></i>
+                                    </button>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="navCustom__box-toggle d-flex d-lg-none align-items-center"
+                >
+                    <label class="toggle__btn" for="toggleHeader">
+                        <span class="toggle__btn-icon-bar"> </span>
+                        <span class="toggle__btn-icon-bar"> </span>
+                        <span class="toggle__btn-icon-bar"> </span>
+                    </label>
+
+                    <input
+                        type="checkbox"
+                        class="toggle__input d-none"
+                        name=""
+                        id="toggleHeader"
+                    />
+                    <div class="toggle__list">
+                        <label for="toggleHeader" class="list__btn-close">
+                            <i class="fa fa-close"></i>
+                        </label>
+                        <div class="list__body">
+                            <ul>
+                                <li class="list__body-search">
+                                    <div class="link__search-form">
+                                        <form action="" class="form">
+                                            <div class="form__input">
+                                                <input
+                                                    class="form-control"
+                                                    type="text"
+                                                    placeholder="Nhập tìm kiếm..."
+                                                />
+                                            </div>
+                                            <button class="form__icon btn">
+                                                <i
+                                                    class="fa fa-search"
+                                                    aria-hidden="true"
+                                                ></i>
+                                            </button>
+                                        </form>
+                                    </div>
+                                </li>
+
+                                <li class="list__body-link active">
+                                    <a href="/" class="">Trang chủ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Giới thiệu</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Sản phẩm</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tin tức</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Đối tác</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Liên hệ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tuyển dụng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <section class="100vh" style="min-height: 100vh"></section>
+
+        <script src="./../vendor/bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+        <script
+            type="text/javascript"
+            src="./../vendor/slick/slick.min.js"
+        ></script>
+
+        <script src="./../js/main.js"></script>
+    </body>
+</html>

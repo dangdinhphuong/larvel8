@@ -1,0 +1,614 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- Bootstrap core CSS -->
+        <link
+            href="./../vendor/bootstrap-4.6.1/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- slick -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../vendor/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../vendor/slick/slick-theme.css"
+        />
+
+        <!-- jquery -->
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.6.0.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-3.3.2.js"
+        ></script>
+
+        <link rel="stylesheet" href="./../css/app.css" />
+
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="./../vendor/font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <!-- header -->
+        <section class="topbar">
+            <div
+                class="topbar__box container d-flex flex-column flex-md-row justify-content-md-end align-items-center"
+            >
+                <div class="topbar__box-item">
+                    <i class="fa fa-phone-square"></i>
+                    <span> Hotline: (+84)28 5411 1557 </span>
+                </div>
+                <div class="topbar__box-item">
+                    <i class="fa fa-envelope"></i>
+                    <span>Email: info@asiagroup-vn.com </span>
+                </div>
+                <div class="topbar__box-item">
+                    <i class="fa fa-language"></i>
+                    <span> English </span>
+                </div>
+            </div>
+        </section>
+
+        <header class="navCustom" id="navCustom">
+            <div class="navCustom__box container d-flex">
+                <div class="navCustom__box-logo mr-auto">
+                    <a href="/">
+                        <img src="./../images/logo.png" alt="" />
+                    </a>
+                </div>
+                <div
+                    class="navCustom__box-link d-none d-lg-flex align-items-center"
+                >
+                    <ul>
+                        <li class="link__item active">
+                            <a href="/" class="">Trang chủ</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Giới thiệu</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Sản phẩm</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Tin tức</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Đối tác</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Liên hệ</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Tuyển dụng</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="navCustom__box-toggle d-flex d-lg-none align-items-center"
+                >
+                    <label class="toggle__btn" for="toggleHeader">
+                        <span class="toggle__btn-icon-bar"> </span>
+                        <span class="toggle__btn-icon-bar"> </span>
+                        <span class="toggle__btn-icon-bar"> </span>
+                    </label>
+
+                    <input
+                        type="checkbox"
+                        class="toggle__input d-none"
+                        name=""
+                        id="toggleHeader"
+                    />
+                    <div class="toggle__list">
+                        <label for="toggleHeader" class="list__btn-close">
+                            <i class="fa fa-close"></i>
+                        </label>
+                        <div class="list__body">
+                            <ul>
+                                <li class="list__body-link active">
+                                    <a href="/" class="">Trang chủ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Giới thiệu</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Sản phẩm</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tin tức</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Đối tác</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Liên hệ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tuyển dụng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--  body -->
+        <section class="Breadcrumb">
+            <div class="Breadcrumb__banner">
+                <div class="Breadcrumb__banner-image">
+                    <img
+                        src="https://www.asiagroup-vn.com/Source/admin/images/banner-page/businessman-signing-contract-QRS6KLM.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="Breadcrumb__banner-desc">
+                    <div class="Breadcrumb__banner-label">Đối tác</div>
+                    <div class="Breadcrumb__banner-link">
+                        <a href="">Trang chủ</a>
+                        <span> > </span>
+                        <a href="" class="active">Đối tác</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="PartnerPage">
+            <div class="container">
+                <div class="PartnerPage__header">
+                    <div class="PartnerPage__header-label">Quan hệ đối tác</div>
+                    <div class="PartnerPage__header-hr"></div>
+                    <div class="PartnerPage__header-desc">
+                        Xây dựng mối quan hệ ổn định và tin cậy trên nền tảng
+                        quan hệ bền vững và hài hòa lợi ích với các đối tác
+                        chính là hệ giá trị nền tảng định hướng mọi hoạt động
+                        kinh doanh của chúng tôi. Với mối quan hệ hợp tác chiến
+                        lược với các nhà cung cấp uy tín ở các quốc gia đi đầu
+                        trong ngành thực phẩm, Asia Group không ngừng mở rộng và
+                        hoàn thiện danh mục sản phẩm cũng như cập nhật những xu
+                        hướng và công nghệ mới nhất, để mang đến cho khách hàng
+                        giải pháp toàn diện nhằm gia tăng chất lượng sản phẩm
+                        đầu ra cũng như tối ưu về chi phí sản xuất. Là cầu nối
+                        giữa các Nhà cung cấp và khách hàng, việc xây dựng mối
+                        quan hệ hợp tác có lợi giữa các bên cũng chính là ưu
+                        tiên hàng đầu trong các quyết sách của Asia Group.
+                    </div>
+                </div>
+                <div class="PartnerPage__body">
+                    <table class="PartnerPage__body-table table table-bordered">
+                        <tbody>
+                            <tr>
+                                <td colspan="4">
+                                    <h3>
+                                        <span style="color: #c8993d"
+                                            >QUỸ ĐẦU TƯ</span
+                                        >
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/1-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/2-300x150.jpg"
+                                    />
+                                </td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <h3>
+                                        <span style="color: #c8993d"
+                                            >NHÀ CUNG CẤP</span
+                                        >
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/1-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/2-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/3-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/4-300x150.jpg"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/5-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/6-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/7-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/8-300x150.jpg"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/9-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/10-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/11-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/12-300x150.jpg"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/13-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/14-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/15-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/16-300x150.jpg"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/17-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/18-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/19-300x150.jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/20-300x150.jpg"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">
+                                    <h3>
+                                        <span style="color: #c8993d"
+                                            >KHÁCH HÀNG</span
+                                        >
+                                    </h3>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/1-300x150 (2).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/2-300x150 (2).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/3-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/4-300x150 (1).jpg"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/5-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/6-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/7-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/8-300x150 (1).jpg"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/9-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/10-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/11-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/12-300x150 (1).jpg"
+                                    />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/13-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/14-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/15-300x150 (1).jpg"
+                                    />
+                                </td>
+                                <td>
+                                    <img
+                                        alt=""
+                                        src="./../images/partner/16-300x150 (1).jpg"
+                                    />
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="footer__box">
+                <div class="footer__bg">
+                    <img src="./../images/bg_footer.jpg" alt="" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="footer__box-main col-12 col-md-4">
+                            <div class="main__image">
+                                <img src="./../images/logo.png" alt="" />
+                            </div>
+                            <div class="main__text">
+                                CÔNG TY TNHH CÔNG NGHỆ PHẨM BA ĐÌNH
+                                <br />
+                                info@bfchem.vn
+                            </div>
+                        </div>
+
+                        <div class="footer__box-item col-12 col-md">
+                            <div class="item__header">Trụ sở chính</div>
+                            <div class="item__body">
+                                <div class="item__body-icon">
+                                    <i
+                                        class="fa fa-map-marker"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    T6, Tòa nhà M5, 91 Nguyễn Chí Thanh, Láng
+                                    Hạ, Đống Đa, HN
+                                </div>
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon1">
+                                    <i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    0243. 715. 3333
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="footer__box-item col-12 col-md">
+                            <div class="item__header">Văn phòng tại Hà Nội</div>
+                            <div class="item__body">
+                                <div class="item__body-icon">
+                                    <i
+                                        class="fa fa-map-marker"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    T6, Tòa nhà M5, 91 Nguyễn Chí Thanh, Láng
+                                    Hạ, Đống Đa, HN
+                                </div>
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon1">
+                                    <i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    0243. 715. 3333
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="footer__box-item col-12 col-md">
+                            <div class="item__header">
+                                Văn phòng tại TP. Hồ Chí Minh
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon">
+                                    <i
+                                        class="fa fa-map-marker"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    T6, Tòa nhà M5, 91 Nguyễn Chí Thanh, Láng
+                                    Hạ, Đống Đa, HN
+                                </div>
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon1">
+                                    <i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    0243. 715. 3333
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom container">
+                <div class="row">
+                    <div class="footer__bottom-item col-12 col-md-6">
+                        @2021 Công ty TNHH Công nghệ phẩm Ba Đình
+                    </div>
+                    <div
+                        class="footer__bottom-link col-12 col-md-6 d-flex justify-content-sm-end align-items-center"
+                    >
+                        <div class="link__item">
+                            <i
+                                class="fa fa-facebook-official"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+                        <div class="link__item">
+                            <i
+                                class="fa fa-youtube-play"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+        <script src="./../vendor/bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+        <script
+            type="text/javascript"
+            src="./../vendor/slick/slick.min.js"
+        ></script>
+
+        <script src="./../js/main.js"></script>
+    </body>
+</html>

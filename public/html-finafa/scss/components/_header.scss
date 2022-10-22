@@ -1,0 +1,308 @@
+.topbar {
+    background-color: #358034;
+    color: #fff;
+    padding: 15px 0;
+    width: auto;
+    display: block;
+    position: relative;
+    border-top: 1px solid #358034;
+    border-bottom: 1px solid #358034;
+    &__box {
+        // width: 1188px;
+        // margin: 0 auto;
+        margin-top: 5px;
+        &-item {
+            margin-left: 30px;
+            i {
+                display: inline-block;
+                padding-right: 3px;
+                color: #cd950c;
+            }
+            a {
+                color: #fff;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.navCustom {
+    position: relative;
+    min-height: 50px;
+    display: block;
+    top: 0;
+    left: 0;
+    position: sticky;
+    z-index: 100;
+    background-color: #fff;
+    border-bottom: 1px solid #cccccc;
+
+    &__box {
+        &-logo {
+            //   height: 50px;
+            padding: 8px 0;
+            a img {
+                width: auto;
+                height: 60px;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+        &-link {
+            ul {
+                list-style: none;
+                display: flex;
+                margin-bottom: 0;
+                li.link__item {
+                    &.active a {
+                        color: #cd950c;
+                        text-decoration: none;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-family: "Roboto", sans-serif;
+                        font-size: 1rem;
+                        font-weight: 500;
+                        color: #214475;
+                        padding: 30px 12px;
+                        &:hover {
+                            text-decoration: none;
+                            color: #cd950c;
+                        }
+                    }
+                }
+                li.link__search {
+                    position: relative;
+                    button.link__search-button {
+                        padding: 0px 5px;
+                        border: none;
+                        box-shadow: unset;
+                        border-radius: unset;
+                    }
+                    .link__search-form {
+                        display: none;
+                        position: absolute;
+                        z-index: 100;
+                        right: 0;
+                        top: calc(100% + 10px);
+                        .form {
+                            display: flex;
+                            border: 1px solid #ccc;
+                            border-radius: 20px;
+                            width: 250px;
+                            overflow: hidden;
+                            &__input {
+                                flex: 1;
+                                input {
+                                    outline: none;
+                                    padding-left: 20px;
+                                    border: none;
+                                    box-shadow: unset;
+                                    border-radius: unset;
+                                    &:focus {
+                                        outline: none;
+                                    }
+                                }
+                            }
+                            &__icon {
+                                background-color: white;
+                                box-shadow: unset;
+                                border-radius: unset;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &-toggle {
+            .toggle__btn {
+                cursor: pointer;
+                background-color: #cd950c;
+                width: 40px;
+                height: 35px;
+                border: none;
+                padding: 5px 10px;
+                -webkit-border-radius: 3px;
+                -moz-border-radius: 3px;
+                -o-border-radius: 3px;
+                -ms-border-radius: 3px;
+                border-radius: 3px;
+                outline: none;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                position: relative;
+                flex-direction: column;
+                // position: absolute;
+                // right: 15px;
+                // top: 22px;
+                // z-index: 20;
+                span.toggle__btn-icon-bar {
+                    background-color: #fff;
+                    display: block;
+                    height: 2px;
+                    width: 100%;
+                    &:not(:last-child) {
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+
+            input.toggle__input:checked ~ .toggle__list {
+                right: 0;
+            }
+
+            .toggle__list {
+                background: #fff;
+                display: block !important;
+                width: 280px;
+                height: 100% !important;
+                margin: 0;
+                padding: 0;
+                border-left: 1px solid #cccccc;
+                border-right: 1px solid #cccccc;
+                position: fixed;
+                right: -300px;
+                top: 0;
+                z-index: 100;
+                transition: all 0.5s;
+                .list {
+                    &__btn-close {
+                        cursor: pointer;
+                        background-color: #214475;
+                        width: 35px;
+                        height: 35px;
+                        color: #fff;
+                        border: 0;
+                        -webkit-border-radius: 50%;
+                        -moz-border-radius: 50%;
+                        -o-border-radius: 50%;
+                        -ms-border-radius: 50%;
+                        border-radius: 50%;
+                        outline: none;
+                        position: absolute;
+                        left: -18px;
+                        top: 10px;
+                        z-index: 20;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+
+                        i {
+                            color: #fff;
+                        }
+                    }
+                    &__body {
+                        height: 100%;
+                        overflow: auto;
+                        margin-top: 12px;
+                        float: none;
+                        ul {
+                            list-style: none;
+                            margin-bottom: 0;
+                            li.list__body-search {
+                                position: relative;
+
+                                .link__search-form {
+                                    // display: none;
+                                    padding: 0 15px 0 20px;
+                                    .form {
+                                        display: flex;
+                                        border: 1px solid #ccc;
+                                        border-radius: 20px;
+                                        width: 100%;
+                                        overflow: hidden;
+                                        &__input {
+                                            flex: 1;
+                                            input {
+                                                outline: none;
+                                                padding-left: 20px;
+                                                border: none;
+                                                box-shadow: unset;
+                                                border-radius: unset;
+                                                &:focus {
+                                                    outline: none;
+                                                }
+                                            }
+                                        }
+                                        &__icon {
+                                            background-color: white;
+                                            box-shadow: none;
+                                            border-radius: unset;
+                                        }
+                                    }
+                                }
+                            }
+                            li.list__body-link {
+                                border-bottom: 1px solid #cccccc;
+                            }
+                            li.list__body-link.active a {
+                                color: #cd950c;
+                            }
+                            li.list__body-link a {
+                                padding: 10px 15px 10px 35px;
+
+                                display: block;
+                                font-size: 0.93333rem;
+                                color: #000;
+                                text-decoration: none;
+
+                                &:hover {
+                                    color: #cd950c;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575px) {
+    // .topbar {
+    //   &__box {
+    //   }
+    // }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767px) {
+    // .topbar {
+    //   &__box {
+    //   }
+    // }
+
+    .topbar {
+        &__box {
+            &-item {
+                margin-left: 00px;
+                i {
+                    display: inline-block;
+                    padding-right: 3px;
+                    color: #cd950c;
+                }
+                a {
+                    color: #fff;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991px) {
+    // .topbar {
+    //   &__box {
+    //   }
+    // }
+}
+
+// Large devices (desktops, less than 1200px)
+@media (max-width: 1199px) {
+}
+
+// Extra large devices (large desktops)
+// No media query since the extra-large breakpoint has no upper bound on its width

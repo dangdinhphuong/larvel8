@@ -1,0 +1,85 @@
+.SignUpFor {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    &__bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 2;
+        }
+    }
+    &__label {
+        position: relative;
+        text-align: center;
+        font-size: 28px;
+        margin-bottom: 20px;
+        font-weight: 600;
+        font-style: italic;
+        text-transform: uppercase;
+        color: #0b0b0b;
+    }
+
+    &__desc {
+        position: relative;
+        padding: 0 20%;
+
+        text-align: center;
+        font-size: 18px;
+        color: #0b0b0b;
+    }
+    &__form {
+        position: relative;
+        .form__item {
+            padding-top: 10px;
+            input.form-control {
+                font-size: 18px;
+                background: transparent;
+                border: 1px solid black;
+                border-radius: 5px;
+                color: black;
+                padding: 0 15px;
+                box-shadow: none;
+                &::placeholder {
+                    color: black;
+                }
+            }
+        }
+
+        .form__btn {
+            padding-top: 10px;
+            button {
+                width: fit-content;
+                font-size: 20px;
+                color: #fff;
+                background: #cf8e2a;
+                padding: 0 30px;
+                &:hover {
+                    opacity: 0.8;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .SignUpFor {
+        &__form {
+            .form__item {
+                padding-top: 20px;
+            }
+
+            .form__btn {
+                padding-top: 20px;
+            }
+        }
+    }
+}

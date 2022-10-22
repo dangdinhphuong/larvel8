@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- Bootstrap core CSS -->
+        <link
+            href="./../vendor/bootstrap-4.6.1/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- slick -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../vendor/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../vendor/slick/slick-theme.css"
+        />
+
+        <!-- jquery -->
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.6.0.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-3.3.2.js"
+        ></script>
+
+        <link rel="stylesheet" href="./../css/app.css" />
+
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="./../vendor/font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <!-- header -->
+        <section class="topbar">
+            <div
+                class="topbar__box container d-flex flex-column flex-md-row justify-content-md-end align-items-center"
+            >
+                <div class="topbar__box-item">
+                    <i class="fa fa-phone-square"></i>
+                    <span> Hotline: (+84)28 5411 1557 </span>
+                </div>
+                <div class="topbar__box-item">
+                    <i class="fa fa-envelope"></i>
+                    <span>Email: info@asiagroup-vn.com </span>
+                </div>
+                <div class="topbar__box-item">
+                    <i class="fa fa-language"></i>
+                    <span> English </span>
+                </div>
+            </div>
+        </section>
+
+        <header class="navCustom" id="navCustom">
+            <div class="navCustom__box container d-flex">
+                <div class="navCustom__box-logo mr-auto">
+                    <a href="/">
+                        <img src="./../images/logo.png" alt="" />
+                    </a>
+                </div>
+                <div
+                    class="navCustom__box-link d-none d-lg-flex align-items-center"
+                >
+                    <ul>
+                        <li class="link__item active">
+                            <a href="/" class="">Trang chủ</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Giới thiệu</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Sản phẩm</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Tin tức</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Đối tác</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Liên hệ</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Tuyển dụng</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="navCustom__box-toggle d-flex d-lg-none align-items-center"
+                >
+                    <label class="toggle__btn" for="toggleHeader">
+                        <span class="toggle__btn-icon-bar"> </span>
+                        <span class="toggle__btn-icon-bar"> </span>
+                        <span class="toggle__btn-icon-bar"> </span>
+                    </label>
+
+                    <input
+                        type="checkbox"
+                        class="toggle__input d-none"
+                        name=""
+                        id="toggleHeader"
+                    />
+                    <div class="toggle__list">
+                        <label for="toggleHeader" class="list__btn-close">
+                            <i class="fa fa-close"></i>
+                        </label>
+                        <div class="list__body">
+                            <ul>
+                                <li class="list__body-link active">
+                                    <a href="/" class="">Trang chủ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Giới thiệu</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Sản phẩm</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tin tức</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Đối tác</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Liên hệ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tuyển dụng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--  body -->
+        <section class="Breadcrumb">
+            <div class="Breadcrumb__banner">
+                <div class="Breadcrumb__banner-image">
+                    <img
+                        src="https://www.asiagroup-vn.com/Source/admin/images/banner-page/businessman-signing-contract-QRS6KLM.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="Breadcrumb__banner-desc">
+                    <div class="Breadcrumb__banner-label">Đối tác</div>
+                    <div class="Breadcrumb__banner-link">
+                        <a href="">Trang chủ</a>
+                        <span> > </span>
+                        <a href="" class="active">Đối tác</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="ProductsDetailPage">
+            <img
+                src="./../images/bg_chitiet.jpg"
+                class="ProductsDetailPage__bg"
+                alt=""
+            />
+            <div class="container">
+                <div class="row">
+                    <div class="ProductsDetailPage__body col-12 col-md-8">
+                        <div class="ProductsDetailPage__label">
+                            <div class="label__text">Danh sách sản phẩm</div>
+                            <div class="label__hr"></div>
+                            <div class="label__time">
+                                <span></span>14.02.2022
+                        </div>
+
+                        <div class="body__box">
+                            BFC cung cấp sản phẩm chất điều vị I+G Plus với thành phần gồm Disodium 5′-Inosinate (E631) 50% và Disodium 5′-Guanylate (E627) 50%(1). Khác so với Chất điều vị I+G là hỗn hợp của dinatri inosine-5′ (I)-monophosphat và dinatri guanosine5′-monophosphat (G) tạo thành dinatri 5’ribonucleotide có mã số là E635.
+
+THÀNH PHẦN:
+Disodium 5’ – Inosinate (IMP) và Disodium 5’ – Guanylate ( GMP): 7.456 %
+Mononatri glutamat (MSG): 34.58 %
+Canxi lactate (ISN 327): 1.47 %
+MaltoDextrin: 56.41 % Tiroxin (INS 551): 0.074 % 4.
+     2. CHỨC NĂNG: 
+
+ I+G Plus có vị ngọt tự nhiên của umami, bên cạnh đó được kết hợp cùng các nguyên liệu để làm tăng thêm vị ngọt đặc trưng, vị ngọt cảm nhận được nhanh hơn, đậm vị hơn, loang nhanh trong khoang miệng và tròn vị hơn khi dùng đơn chất.
+I+G Plus thuận tiện cho quá trình sản xuất: khắc phục được sai số khi định lượng, do khối lượng mỗi mẻ cân nhiều hơn.
+I+G Plus được phối trộn bằng thiết bị trộn Inox trục đứng khép kín, tạo ra sản phẩm có chất lượng ổn định, độ đồng đều cao và bảo đảm an toàn vệ sinh thực phẩm.
+     3. Quy cách đóng gói :
+Quy cách đóng gói: 1kg/gói (10 gói/thùng), 2kg/gói; 5kg/bao; 10kg/bao; 20kg/bao; 25kg/bao
+Chất liệu bao bì: Bao Polyethylene dày, bao metalize, bao kraft đảm bảo chất lượng và vệ sinh an toàn thực phẩm của Bộ Y Tế về bao bì thực phẩm.
+  4. Thời hạn và cách bảo quản:
+Thời hạn sử dụng: 5 năm kể từ ngày sản xuất và chưa mở bao 
+Bảo quản nơi khô ráo và thoáng mát 
+Bài viết “Chất điều vị I+G PLus là gì?” trên đã cung cấp các thông tin khoa học và mẫu sản phẩm đạt chuẩn quy chuẩn kỹ thuật Bộ Y Tế do BFC phân phối.
+Liên hệ ngay với BFC theo số hotline:
+0243. 715. 3333 (HN) 
+0283.849.3321 (HCM)
+để đặt sản phẩm chất điều vị I+G với giá vô cùng cạnh tra
+                        </div>
+                        <div class="body__bottom">
+                            <a href="" class="body__bottom-contact">
+                                Liên hệ tư vấn 
+                            </a>
+                            <a href="body__bottom-back" class="body__bottom-back">
+                                quay lại sản phẩm 
+                            </a>
+                        </div>
+                    </div>
+                   
+                </div>
+                <div class="ProductsDetailPage__option col-12 col-md-4">
+                    <div class="ProductsDetailPage__option-image">
+                        <img src="https://picsum.photos/500/500" alt="">
+                    </div>
+
+
+
+                    <div class="ProductsDetailPage__option-recent">
+                        <div class="recent__label">
+                            <div class="recent__label-text">Danh sách sản phẩm</div>
+                            <div class="recent__label-hr"></div>
+                           
+                        </div>
+
+                        <div class="recent__list ">
+                            <div class="recent__list-item">
+                                <div class="item__image">
+                                    <a href="">
+                                        <div class="image">
+                                         <img src="https://picsum.photos/500/500" alt="">
+                                        </div>
+                                     </a>
+                                </div>
+                                <div class="item__info">
+                                        <div class="item__info-time">
+                                            04.11.2021
+                                        </div>
+                                        <div class="item__info-label">
+                                                <a href="">
+                                                    Ethyl Maltor Ethyl MaltorEthyl MaltorEthyl MaltorEthyl MaltorEthyl MaltorEthyl MaltorEthyl Maltor
+                                                </a>
+                                        </div>
+                                </div>
+                      
+                            </div>  
+
+                            <div class="recent__list-item">
+                                <div class="item__image">
+                                    <a href="">
+                                        <div class="image">
+                                         <img src="https://picsum.photos/500/500" alt="">
+                                        </div>
+                                     </a>
+                                </div>
+                                <div class="item__info">
+                                        <div class="item__info-time">
+                                            04.11.2021
+                                        </div>
+                                        <div class="item__info-label">
+                                                <a href="">
+                                                    Ethyl Maltor
+                                                </a>
+                                        </div>
+                                </div>
+                      
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__box">
+                <div class="footer__bg">
+                    <img src="./../images/bg_footer.jpg" alt="" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="footer__box-main col-12 col-md-4">
+                            <div class="main__image">
+                                <img src="./../images/logo.png" alt="" />
+                            </div>
+                            <div class="main__text">
+                                CÔNG TY TNHH CÔNG NGHỆ PHẨM BA ĐÌNH
+                                <br />
+                                info@bfchem.vn
+                            </div>
+                        </div>
+
+                        <div class="footer__box-item col-12 col-md">
+                            <div class="item__header">Trụ sở chính</div>
+                            <div class="item__body">
+                                <div class="item__body-icon">
+                                    <i
+                                        class="fa fa-map-marker"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    T6, Tòa nhà M5, 91 Nguyễn Chí Thanh, Láng
+                                    Hạ, Đống Đa, HN
+                                </div>
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon1">
+                                    <i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    0243. 715. 3333
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="footer__box-item col-12 col-md">
+                            <div class="item__header">Văn phòng tại Hà Nội</div>
+                            <div class="item__body">
+                                <div class="item__body-icon">
+                                    <i
+                                        class="fa fa-map-marker"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    T6, Tòa nhà M5, 91 Nguyễn Chí Thanh, Láng
+                                    Hạ, Đống Đa, HN
+                                </div>
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon1">
+                                    <i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    0243. 715. 3333
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="footer__box-item col-12 col-md">
+                            <div class="item__header">
+                                Văn phòng tại TP. Hồ Chí Minh
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon">
+                                    <i
+                                        class="fa fa-map-marker"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    T6, Tòa nhà M5, 91 Nguyễn Chí Thanh, Láng
+                                    Hạ, Đống Đa, HN
+                                </div>
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon1">
+                                    <i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    0243. 715. 3333
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom container">
+                <div class="row">
+                    <div class="footer__bottom-item col-12 col-md-6">
+                        @2021 Công ty TNHH Công nghệ phẩm Ba Đình
+                    </div>
+                    <div
+                        class="footer__bottom-link col-12 col-md-6 d-flex justify-content-sm-end align-items-center"
+                    >
+                        <div class="link__item">
+                            <i
+                                class="fa fa-facebook-official"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+                        <div class="link__item">
+                            <i
+                                class="fa fa-youtube-play"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+        <script src="./../vendor/bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+        <script
+            type="text/javascript"
+            src="./../vendor/slick/slick.min.js"
+        ></script>
+
+        <script src="./../js/main.js"></script>
+    </body>
+</html>

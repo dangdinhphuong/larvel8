@@ -1,0 +1,165 @@
+.RecruitmentPage {
+    padding: 50px 0;
+    position: relative;
+    &__bg {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        object-fit: cover;
+        object-position: center;
+    }
+    &__label {
+        .label {
+            &__text {
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+                color: #214475;
+                margin: 0;
+
+                position: relative;
+                font-size: 2.4rem;
+            }
+            &__hr {
+                position: relative;
+                background-color: #cd950c;
+                width: 40px;
+                height: 5px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__option {
+        padding-top: 50px;
+        display: block;
+        position: relative;
+        &-item {
+            .item__box {
+                background: #fbf1d0;
+                min-height: 200px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                padding: 40px 30px;
+                border-radius: 20px;
+                box-shadow: 0 0 20px rgb(0 0 0 / 20%);
+                margin-bottom: 20px;
+                &:hover {
+                    background: #a7a6a3;
+                    .item {
+                        &__label {
+                            a {
+                                color: #fff;
+                            }
+                        }
+                        &__btn {
+                            a {
+                                text-decoration: none;
+                            }
+                            &-readmore {
+                                border: 2px solid #fff;
+                                color: #fff;
+                            }
+                            &-apply {
+                                background: #fff;
+                                color: #cf8e2a;
+                                border: 2px solid #fff;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .item {
+                a {
+                    text-decoration: none;
+                }
+                &__label {
+                    a {
+                        font-size: 18px;
+                        font-weight: 600;
+                        text-transform: uppercase;
+                        color: #5b5b5b;
+                        display: block;
+                        margin-bottom: 20px;
+                        text-decoration: none;
+                    }
+                }
+                &__btn {
+                    display: flex;
+                    justify-content: space-between;
+                    &-readmore {
+                        border: 2px solid #cf8e2a;
+                        color: #cf8e2a;
+                        font-size: 15px;
+                        display: block;
+                        text-align: center;
+                        margin: 0;
+                        border-radius: 15px;
+                        padding: 6px 15px;
+                        background-color: transparent;
+                        margin-right: 10px;
+                        flex: 1;
+                    }
+                    &-apply {
+                        flex: 1;
+                        padding: 6px 15px;
+                        border: 2px solid #cf8e2a;
+                        background: #cf8e2a;
+                        color: #fff;
+                        font-size: 15px;
+                        display: block;
+                        text-align: center;
+                        margin: 0;
+                        border-radius: 15px;
+                    }
+                }
+            }
+        }
+    }
+    &__body {
+        padding-top: 50px;
+        .body__box {
+            background: #fff;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 16px #ddcdb3;
+            font-size: 16px;
+            line-height: 28px;
+            .box__header {
+                font-size: 30px;
+                font-weight: 600;
+                font-style: italic;
+                margin-bottom: 30px;
+                color: #cf8e2a;
+            }
+
+            .box__text {
+                font-size: 16px;
+            }
+            .box__btn {
+                margin-top: 20px;
+                a {
+                    text-decoration: none;
+                    margin-top: 30px;
+                    background: #cf8e2a;
+                    color: #fff;
+                    padding: 10px 20px;
+                    border-radius: 10px;
+                    line-height: 1.2;
+                    cursor: pointer;
+                    width: auto;
+                    font-size: 18px;
+                    &:hover {
+                        opacity: 0.9;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,317 @@
+.IntroducePage {
+    &__label {
+        .label {
+            &__text {
+                font-family: "Roboto", sans-serif;
+                font-weight: bold;
+                color: #214475;
+                margin: 0;
+
+                position: relative;
+                font-size: 2.4rem;
+            }
+            &__hr {
+                background-color: #cd950c;
+                width: 40px;
+                height: 5px;
+                border-radius: 5px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+    &__general {
+        padding: 50px 10%;
+        &-title {
+            &-desc {
+                padding-top: 50px;
+                font-size: 18px;
+                line-height: 1.6;
+                * {
+                    font-size: 18px;
+                    line-height: 1.6;
+                }
+            }
+        }
+        &-image {
+            width: 100%;
+            max-height: 700px;
+            img {
+                width: 100%;
+                height: 100%;
+                max-height: 100%;
+                object-fit: fill;
+                object-position: center;
+            }
+        }
+    }
+
+    &__vision {
+        padding: 50px 0 50px 10%;
+
+        display: flex;
+        &-desc {
+            width: 60%;
+            &-text {
+                font-size: 18px;
+                line-height: 1.6;
+                * {
+                    font-size: 18px;
+                    line-height: 1.6;
+                }
+            }
+        }
+        &-img {
+            width: 40%;
+
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+    &__mission {
+        padding: 0 10%;
+        padding-bottom: 50px;
+        &-desc {
+            font-size: 18px;
+            line-height: 1.6;
+            * {
+                font-size: 18px;
+                line-height: 1.6;
+            }
+        }
+        &-img {
+            width: 100%;
+            img {
+                width: 100%;
+                height: auto;
+                max-height: 100%;
+                object-fit: contain;
+                object-position: center;
+            }
+        }
+    }
+    &__CoreValues {
+        position: relative;
+        padding: 50px 10%;
+        &-bg {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+        &-desc {
+            .desc__body {
+                &-item {
+                    &-label {
+                        font-size: 22px;
+                        font-weight: 500;
+                        text-align: center;
+                        * {
+                            font-size: 22px;
+                            font-weight: 500;
+                            text-align: center;
+                        }
+                    }
+                    &-text {
+                        padding-top: 20px;
+                        color: #616161;
+                        line-height: 1.4;
+                        font-size: 16px;
+                        * {
+                            color: #616161;
+                            line-height: 1.4;
+                            font-size: 16px;
+                        }
+                    }
+                }
+            }
+        }
+        &-img {
+            .img__item {
+                position: relative;
+                width: 100%;
+                padding-top: 100%;
+                overflow: hidden;
+                aspect-ratio: 1/1;
+                img {
+                    width: 100%;
+                    height: 100%;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    object-fit: cover;
+                    object-position: center;
+                }
+            }
+        }
+    }
+    &__CoreCompetencies {
+        padding: 50px 10%;
+        .IntroducePage__label {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-body {
+            .body {
+                &__item {
+                    padding-top: 50px;
+                    padding-bottom: 50px;
+                    &-label {
+                        margin: 0 0 20px;
+                        min-height: 52px;
+                        font-size: 22px;
+                        letter-spacing: 1px;
+                        font-weight: 500;
+                        * {
+                            font-size: 22px;
+                            letter-spacing: 1px;
+                            font-weight: 500;
+                        }
+                    }
+                    &-desc {
+                        color: #373737;
+                        line-height: 1.6;
+                        margin: 0 0 15px;
+                        text-align: justify;
+                        font-size: 16px;
+                        * {
+                            color: #373737;
+                            line-height: 1.6;
+                            text-align: justify;
+                            font-size: 16px;
+                        }
+                    }
+                    &-img {
+                        margin-top: 30px;
+                        position: relative;
+                        width: 100%;
+                        padding-top: 60%;
+                        overflow: hidden;
+                        aspect-ratio: 100/60;
+                        img {
+                            width: 100%;
+                            height: 100%;
+                            position: absolute;
+                            top: 0;
+                            left: 0;
+                            right: 0;
+                            bottom: 0;
+                            object-fit: cover;
+                            object-position: center;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .IntroducePage {
+        &__general {
+            // padding: 0 15px;
+        }
+        &__vision {
+            // padding: 0 15px;
+            // padding-top: 40px;
+            padding: 50px 10% 50px 10%;
+            display: flex;
+            flex-wrap: wrap;
+            &-desc {
+                width: 100%;
+            }
+            &-img {
+                padding-top: 20px;
+                width: 100%;
+            }
+        }
+
+        &__mission {
+            // padding: 50px 15px 0 15px;
+            &-img {
+                padding-top: 20px;
+            }
+        }
+        &__CoreValues {
+            &-desc {
+                padding-bottom: 50px;
+            }
+            &-img {
+                padding-left: 0;
+            }
+        }
+        &__CoreCompetencies {
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .IntroducePage {
+        &__general {
+            padding-left: 15px;
+            padding-right: 15px;
+        }
+        &__vision {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            display: flex;
+            flex-wrap: wrap;
+            &-desc {
+                width: 100%;
+            }
+            &-img {
+                padding-top: 20px;
+                width: 100%;
+            }
+        }
+
+        &__mission {
+            padding-left: 15px;
+            padding-right: 15px;
+            // padding: 50px 15px 0 15px;
+            &-img {
+                padding-top: 20px;
+            }
+        }
+        &__CoreValues {
+            padding-left: 15px;
+            padding-right: 15px;
+            &-desc {
+                padding-left: 15px !important;
+
+                padding-right: 15px;
+                padding-bottom: 50px;
+            }
+            &-img {
+                padding-left: 15px;
+                padding-right: 15px !important;
+            }
+        }
+        &__CoreCompetencies {
+            padding-left: 15px;
+            padding-right: 15px;
+
+            &-body .body__item {
+                padding-bottom: 20px;
+            }
+        }
+    }
+}

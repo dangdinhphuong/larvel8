@@ -1,0 +1,165 @@
+.BusinessAreas {
+  width: 100%;
+  background-color: #fff;
+  background: url(https://picsum.photos/seed/picsum900/1200) center center/cover
+    no-repeat fixed;
+  padding: 85px 0;
+  position: relative;
+  &__title {
+    width: 100%;
+    &-label {
+      // display: flex;
+      // justify-content: center;
+      text-align: center;
+      font-size: 2.4rem;
+      line-height: 1em;
+      margin: 0;
+      padding-bottom: 0.47em;
+      position: relative;
+
+      font-family: "Roboto", sans-serif;
+      font-weight: bold;
+      color: #214475;
+    }
+    &-hr {
+      width: 30px;
+      height: 5px;
+      border-radius: 5px;
+      background-color: #cd950c;
+      margin: auto;
+    }
+    &-desc {
+      text-align: center;
+      color: #999999;
+      line-height: 1.8em;
+      margin: 0 0 10px;
+    }
+  }
+  &__body {
+    display: flex;
+    width: 1170px;
+    margin: 0 auto;
+    &-item {
+      width: calc(100% / 3 - 30px);
+      float: left;
+      margin: 0 15px 30px;
+
+      text-align: center;
+      padding: 50px 35px;
+      border: 1px solid #d9d9d9;
+      border-radius: 5px;
+      position: relative;
+
+      .item {
+        &__icon {
+          background-color: #214475;
+          width: 100px;
+          height: 100px;
+          line-height: 100px;
+          border-radius: 50%;
+          margin: 0 auto 35px;
+          position: relative;
+          z-index: 2;
+        }
+        &__detail {
+          position: relative;
+          z-index: 2;
+
+          &-label {
+            font-size: 1.6rem;
+            margin: 0 0 10px;
+            // padding-bottom: 0.42em;
+            position: relative;
+            font-family: "Roboto", sans-serif;
+            font-weight: bold;
+            color: #214475;
+          }
+          &-hr {
+            width: 24px;
+            height: 4px;
+            border-radius: 4px;
+            margin: 0 auto 1em;
+            background-color: #cd950c;
+          }
+          &-desc {
+            color: #999999;
+            line-height: 1.8em;
+            margin: 0 0 10px;
+          }
+        }
+        &__hover {
+          background: url(https://www.asiagroup-vn.com/Source/admin/images/Linh%20vuc/sales_distribution.jpg)
+            center center/cover no-repeat local;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          opacity: 0;
+          -webkit-transition: all 0.3s;
+          -moz-transition: all 0.3s;
+          -o-transition: all 0.3s;
+          -ms-transition: all 0.3s;
+          transition: all 0.3s;
+
+          span.item__hover-child {
+            background-color: rgba(1, 47, 92, 0.9);
+            width: 33.33%;
+            height: 10%;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            opacity: 0;
+            -webkit-transition: all 0.3s ease-in-out;
+            -o-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+          }
+
+          span.item__hover-child:nth-child(2) {
+            left: 33.33%;
+            height: 20%;
+            -webkit-transition: all 0.3s 0.1s ease-in-out;
+            -o-transition: all 0.3s 0.1s ease-in-out;
+            transition: all 0.3s 0.1s ease-in-out;
+          }
+          span.item__hover-child:nth-child(3) {
+            left: 66.66%;
+            height: 30%;
+            -webkit-transition: all 0.3s 0.2s ease-in-out;
+            -o-transition: all 0.3s 0.2s ease-in-out;
+            transition: all 0.3s 0.2s ease-in-out;
+          }
+        }
+      }
+      &:hover {
+        .item {
+          &__detail {
+            &-label {
+              color: #fff;
+            }
+            &-desc {
+              color: #fff;
+            }
+          }
+        }
+        .item__hover {
+          opacity: 1;
+
+          span.item__hover-child {
+            height: 100%;
+            opacity: 1;
+          }
+
+          // span.item__hover-child:nth-child(2) {
+          //   left: 66.66%;
+          //   transition: all 0.3s 0.2s ease-in-out;
+          // }
+          // span.item__hover-child:nth-child(3) {
+          //   left: 66.66%;
+          //   transition: all 0.3s 0.2s ease-in-out;
+          // }
+        }
+      }
+    }
+  }
+}

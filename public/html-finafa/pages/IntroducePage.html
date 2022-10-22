@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+
+        <!-- Bootstrap core CSS -->
+        <link
+            href="./../vendor/bootstrap-4.6.1/css/bootstrap.min.css"
+            rel="stylesheet"
+        />
+
+        <!-- slick -->
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../vendor/slick/slick.css"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="./../vendor/slick/slick-theme.css"
+        />
+
+        <!-- jquery -->
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-3.6.0.js"
+        ></script>
+        <script
+            type="text/javascript"
+            src="https://code.jquery.com/jquery-migrate-3.3.2.js"
+        ></script>
+
+        <link rel="stylesheet" href="./../css/app.css" />
+
+        <!-- icon -->
+        <link
+            rel="stylesheet"
+            href="./../vendor/font-awesome-4.7.0/css/font-awesome.min.css"
+        />
+    </head>
+    <body>
+        <!-- header -->
+        <section class="topbar">
+            <div
+                class="topbar__box container d-flex flex-column flex-md-row justify-content-md-end align-items-center"
+            >
+                <div class="topbar__box-item">
+                    <i class="fa fa-phone-square"></i>
+                    <span> Hotline: (+84)28 5411 1557 </span>
+                </div>
+                <div class="topbar__box-item">
+                    <i class="fa fa-envelope"></i>
+                    <span>Email: info@asiagroup-vn.com </span>
+                </div>
+                <div class="topbar__box-item">
+                    <i class="fa fa-language"></i>
+                    <span> English </span>
+                </div>
+            </div>
+        </section>
+
+        <header class="navCustom" id="navCustom">
+            <div class="navCustom__box container d-flex">
+                <div class="navCustom__box-logo mr-auto">
+                    <a href="/">
+                        <img src="./../images/logo.png" alt="" />
+                    </a>
+                </div>
+                <div
+                    class="navCustom__box-link d-none d-lg-flex align-items-center"
+                >
+                    <ul>
+                        <li class="link__item active">
+                            <a href="/" class="">Trang chủ</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Giới thiệu</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Sản phẩm</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Tin tức</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Đối tác</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Liên hệ</a>
+                        </li>
+                        <li class="link__item">
+                            <a href="/" class="">Tuyển dụng</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div
+                    class="navCustom__box-toggle d-flex d-lg-none align-items-center"
+                >
+                    <label class="toggle__btn" for="toggleHeader">
+                        <span class="toggle__btn-icon-bar"> </span>
+                        <span class="toggle__btn-icon-bar"> </span>
+                        <span class="toggle__btn-icon-bar"> </span>
+                    </label>
+
+                    <input
+                        type="checkbox"
+                        class="toggle__input d-none"
+                        name=""
+                        id="toggleHeader"
+                    />
+                    <div class="toggle__list">
+                        <label for="toggleHeader" class="list__btn-close">
+                            <i class="fa fa-close"></i>
+                        </label>
+                        <div class="list__body">
+                            <ul>
+                                <li class="list__body-link active">
+                                    <a href="/" class="">Trang chủ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Giới thiệu</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Sản phẩm</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tin tức</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Đối tác</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Liên hệ</a>
+                                </li>
+                                <li class="list__body-link">
+                                    <a href="/" class="">Tuyển dụng</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!--  body -->
+        <section class="Breadcrumb">
+            <div class="Breadcrumb__banner">
+                <div class="Breadcrumb__banner-image">
+                    <img
+                        src="https://www.asiagroup-vn.com/Source/admin/images/banner-page/businessman-signing-contract-QRS6KLM.jpg"
+                        alt=""
+                    />
+                </div>
+                <div class="Breadcrumb__banner-desc">
+                    <div class="Breadcrumb__banner-label">Đối tác</div>
+                    <div class="Breadcrumb__banner-link">
+                        <a href="">Trang chủ</a>
+                        <span> > </span>
+                        <a href="" class="active">Đối tác</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="IntroducePage">
+            <div class="IntroducePage__general">
+                <div class="row">
+                    <div class="IntroducePage__general-title col-12 col-md-6">
+                        <div class="IntroducePage__label">
+                            <div class="label__text">Giới thiệu chung</div>
+                            <div class="label__hr"></div>
+                        </div>
+                        <div class="IntroducePage__general-title-desc">
+                            Công ty TNHH Công nghệ phẩm Ba Đình (BFC) được thành
+                            lập từ năm 2000. Trải qua hai thập kỷ hình thành vào
+                            phát triển không ngừng trong lĩnh vực thương mại
+                            cung cấp phụ gia và nguyên liệu thực phẩm, BFC trở
+                            thành một trong những doanh nghiệp được tin cậy
+                            nhất. Sản phẩm của công ty đa dạng và ứng dụng rộng
+                            trong nhiều ngành sản xuất bánh kẹo, thạch, nước
+                            giải khát, kem, nước mắm, nước tương, mỳ ăn liền,
+                            chế biến thực phẩm, thức ăn chăn nuôi, v.v.
+                            <br />
+                            <br />
+                            Với sứ mệnh đồng hành cùng các đối tác trên con
+                            đường thành công, BFC nỗ lực xây dựng hệ thống quy
+                            trình kiểm soát chất lượng chặt chẽ để mang tới
+                            những sản phẩm chất lượng. BFC cũng là một trong
+                            những doanh nghiệp tiên phong xây dựng phòng thí
+                            nghiệm kỹ thuật nghiên cứu, phát triển ứng dụng phụ
+                            gia thực phẩm nhằm đưa ra được những giải pháp tối
+                            ưu nhất cho khách hàng.
+                        </div>
+                    </div>
+                    <div class="IntroducePage__general-image col-12 col-md-6">
+                        <img src="https://picsum.photos/900/900" alt="" />
+                    </div>
+                </div>
+            </div>
+            <div class="row m-0 p-0">
+                <div class="IntroducePage__vision col-12 col-md-6">
+                    <div class="IntroducePage__vision-desc">
+                        <div class="IntroducePage__label">
+                            <div class="label__text">Tầm nhìn</div>
+                            <div class="label__hr"></div>
+                        </div>
+                        <div class="IntroducePage__vision-desc-text">
+                            BFC trở thành công ty kinh doanh công nghệ và thương
+                            mại có trải nghiệm khách hàng và môi trường làm việc
+                            top 10 Việt Nam.
+                        </div>
+                    </div>
+                    <div class="IntroducePage__vision-img">
+                        <img src="https://picsum.photos/500/900" alt="" />
+                    </div>
+                </div>
+                <div class="IntroducePage__mission col-12 col-md-6">
+                    <div class="IntroducePage__label">
+                        <div class="label__text">Sứ mệnh</div>
+                        <div class="label__hr"></div>
+                    </div>
+
+                    <div class="IntroducePage__mission-desc">
+                        Phục vụ con người thông qua giá trị lõi là kinh doanh
+                        thương mại công nghệ chế biến thực phầm và cung cấp hóa
+                        chất phụ gia trong ngành thực phẩm.
+                    </div>
+                    <div class="IntroducePage__mission-img">
+                        <img src="https://picsum.photos/500/500" alt="" />
+                    </div>
+                </div>
+            </div>
+
+            <div class="IntroducePage__CoreValues">
+                <div class="IntroducePage__CoreValues-bg">
+                    <img src="./../images/bg_giatricotloi.jpg" alt="" />
+                </div>
+                <div class="row">
+                    <div
+                        class="IntroducePage__CoreValues-desc col-12 col-md-9 pl-0"
+                    >
+                        <div class="desc__title">
+                            <div class="IntroducePage__label">
+                                <div class="label__text">Giá trị cốt lõi</div>
+                                <div class="label__hr"></div>
+                            </div>
+                        </div>
+                        <div class="desc__body row">
+                            <!--  -->
+                            <div
+                                class="desc__body-item col-12 col-sm-6 col-md-4 pt-5"
+                            >
+                                <div class="desc__body-item-label">
+                                    Khách hàng là trung tâm
+                                </div>
+                                <div class="desc__body-item-text">
+                                    BFC trở thành thương hiệu tin cậy nhất tại
+                                    Việt Nam trong lĩnh vực nguyên liệu và phụ
+                                    gia thực phẩm với cam kết cao nhất về chất
+                                    lượng sản phẩm, dịch vụ và trách nhiệm xã
+                                    hội.
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div
+                                class="desc__body-item col-12 col-sm-6 col-md-4 pt-5"
+                            >
+                                <div class="desc__body-item-label">
+                                    Trách nhiệm
+                                </div>
+                                <div class="desc__body-item-text">
+                                    Chủ động và nỗ lực thực hiện các nhiệm vụ
+                                    được giao và chịu trách nhiệm về những gì đã
+                                    làm nhằm đem lại kết quả tốt nhất cho Công
+                                    ty và khách hàng.
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div
+                                class="desc__body-item col-12 col-sm-6 col-md-4 pt-5"
+                            >
+                                <div class="desc__body-item-label">
+                                    Trung thực
+                                </div>
+                                <div class="desc__body-item-text">
+                                    Là yếu tố quan trọng thúc đẩy mối quan hệ
+                                    tin cậy trong công việc với đồng nghiệp,
+                                    khách hàng và đối tác. Chúng tôi luôn tôn
+                                    trọng sự thật, không xuyên tạc sự thật gây
+                                    tổn hại đến người khác.
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div
+                                class="desc__body-item col-12 col-sm-6 col-md-4 pt-5"
+                            >
+                                <div class="desc__body-item-label">Hợp tác</div>
+                                <div class="desc__body-item-text">
+                                    Sẵn sàng hỗ trợ đồng nghiệp, khách hàng hoàn
+                                    thành các mục tiêu chung. Bổ trợ những ưu,
+                                    khuyết điểm của các thành viên trong cùng
+                                    một nhóm - Kết quả đầu ra của nhóm này là dữ
+                                    liệu đầu vào của nhóm kế tiếp.
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div
+                                class="desc__body-item col-12 col-sm-6 col-md-4 pt-5"
+                            >
+                                <div class="desc__body-item-label">
+                                    Tính hệ thống
+                                </div>
+                                <div class="desc__body-item-text">
+                                    Hành động dựa trên chiến lược, mục tiêu của
+                                    Công ty. Các bộ phận hoạt động theo mô hình
+                                    quản trị và phân quyền rõ ràng để đảm bảo sự
+                                    nhất quán và thay đổi linh hoạt với tác động
+                                    của môi trường kinh doanh.
+                                </div>
+                            </div>
+                            <!--  -->
+                            <!--  -->
+                            <div
+                                class="desc__body-item col-12 col-sm-6 col-md-4 pt-5"
+                            >
+                                <div class="desc__body-item-label">
+                                    Sáng tạo
+                                </div>
+                                <div class="desc__body-item-text">
+                                    Nghĩ khác, tìm kiếm, phát triển cách thức
+                                    hiện thực hóa ý tưởng mới, giải pháp mới
+                                    nhằm giải quyết công việc hiệu quả hơn và
+                                    tạo ra sản phẩm, dịch vụ khác biệt.
+                                </div>
+                            </div>
+                            <!--  -->
+                        </div>
+                    </div>
+                    <div
+                        class="IntroducePage__CoreValues-img col-12 col-md-3 pr-0"
+                    >
+                        <div class="img__item">
+                            <img src="https://picsum.photos/500/500" alt="" />
+                        </div>
+                        <div class="img__item mt-4">
+                            <img src="https://picsum.photos/500/500" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="IntroducePage__CoreCompetencies">
+                <div class="IntroducePage__label">
+                    <div class="label__text">Năng lực cốt lõi</div>
+                    <div class="label__hr"></div>
+                </div>
+
+                <div class="IntroducePage__CoreCompetencies-body">
+                    <div class="row">
+                        <div class="body__item col-12 col-lg-4">
+                            <div class="body__item-label">
+                                Hỗ trợ phát triển ý tưởng, hoàn thiện sản phẩm
+                            </div>
+                            <div class="body__item-desc">
+                                Chúng tôi luôn tìm kiếm những nguyên liệu, phụ
+                                gia cũng như công nghệ mới nhất từ các nhà cung
+                                cấp hàng đầu khu vực và thế giới, đồng hành cùng
+                                khách hàng trong việc phát triển sản phẩm để trở
+                                nên khác biệt trong tình hình thị trường luôn
+                                luôn có sự thay đổi. Đội ngũ chuyên viên kỹ
+                                thuật của BFC quan tâm đến từng thành phần để
+                                đảm bảo sản phẩm đạt chất lượng cao, an toàn và
+                                đáp ứng các nhu cầu của khách hàng.
+                            </div>
+                            <div class="body__item-img">
+                                <img
+                                    src="https://picsum.photos/200/300"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="body__item col-12 col-lg-4">
+                            <div class="body__item-label">
+                                Dịch vụ khách hàng
+                            </div>
+                            <div class="body__item-desc">
+                                Đội ngũ nhân viên đông, am hiểu thị trường, với
+                                khả năng chuyên môn cao có thể cung cấp các dịch
+                                vụ (tư vấn xu hướng nguyên vật liệu, sản phẩm,
+                                thị trường) đáp ứng các nhu cầu của khách hàng.
+                            </div>
+                            <div class="body__item-img">
+                                <img
+                                    src="https://picsum.photos/200/300"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="body__item col-12 col-lg-4">
+                            <div class="body__item-label">
+                                Phân phối độc quyền
+                            </div>
+                            <div class="body__item-desc">
+                                Chúng tôi là nhà phân phối độc quyền cho các nhà
+                                sản xuất hàng đầu khu vực và thế giới tại Việt
+                                Nam cho các dòng sản phẩm: Tăng hương HD, Chiết
+                                xuất nấm men, Gia vị xúc xích... Với năng lực
+                                phân phối, uy tín và danh tiếng trong suốt 20
+                                năm qua, ngày càng nhiều các nhà sản xuất lớn
+                                trên thế giới đề nghị BFC hợp tác phân phối độc
+                                quyền cho các sản phẩm thế mạnh của họ tại Việt
+                                Nam.
+                            </div>
+                            <div class="body__item-img">
+                                <img
+                                    src="https://picsum.photos/200/300"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="footer__box">
+                <div class="footer__bg">
+                    <img src="./../images/bg_footer.jpg" alt="" />
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="footer__box-main col-12 col-md-4">
+                            <div class="main__image">
+                                <img src="./../images/logo.png" alt="" />
+                            </div>
+                            <div class="main__text">
+                                CÔNG TY TNHH CÔNG NGHỆ PHẨM BA ĐÌNH
+                                <br />
+                                info@bfchem.vn
+                            </div>
+                        </div>
+
+                        <div class="footer__box-item col-12 col-md">
+                            <div class="item__header">Trụ sở chính</div>
+                            <div class="item__body">
+                                <div class="item__body-icon">
+                                    <i
+                                        class="fa fa-map-marker"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    T6, Tòa nhà M5, 91 Nguyễn Chí Thanh, Láng
+                                    Hạ, Đống Đa, HN
+                                </div>
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon1">
+                                    <i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    0243. 715. 3333
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--  -->
+                        <div class="footer__box-item col-12 col-md">
+                            <div class="item__header">Văn phòng tại Hà Nội</div>
+                            <div class="item__body">
+                                <div class="item__body-icon">
+                                    <i
+                                        class="fa fa-map-marker"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    T6, Tòa nhà M5, 91 Nguyễn Chí Thanh, Láng
+                                    Hạ, Đống Đa, HN
+                                </div>
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon1">
+                                    <i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    0243. 715. 3333
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                        <div class="footer__box-item col-12 col-md">
+                            <div class="item__header">
+                                Văn phòng tại TP. Hồ Chí Minh
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon">
+                                    <i
+                                        class="fa fa-map-marker"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    T6, Tòa nhà M5, 91 Nguyễn Chí Thanh, Láng
+                                    Hạ, Đống Đa, HN
+                                </div>
+                            </div>
+                            <div class="item__body">
+                                <div class="item__body-icon1">
+                                    <i
+                                        class="fa fa-phone"
+                                        aria-hidden="true"
+                                    ></i>
+                                </div>
+                                <div class="item__body-text">
+                                    0243. 715. 3333
+                                </div>
+                            </div>
+                        </div>
+                        <!--  -->
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer__bottom container">
+                <div class="row">
+                    <div class="footer__bottom-item col-12 col-md-6">
+                        @2021 Công ty TNHH Công nghệ phẩm Ba Đình
+                    </div>
+                    <div
+                        class="footer__bottom-link col-12 col-md-6 d-flex justify-content-sm-end align-items-center"
+                    >
+                        <div class="link__item">
+                            <i
+                                class="fa fa-facebook-official"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+                        <div class="link__item">
+                            <i
+                                class="fa fa-youtube-play"
+                                aria-hidden="true"
+                            ></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer -->
+        <script src="./../vendor/bootstrap-4.6.1/js/bootstrap.bundle.min.js"></script>
+        <script
+            type="text/javascript"
+            src="./../vendor/slick/slick.min.js"
+        ></script>
+
+        <script src="./../js/main.js"></script>
+    </body>
+</html>
