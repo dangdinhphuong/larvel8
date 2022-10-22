@@ -1,18 +1,10 @@
-FROM php:7.4-fpm-alpine
+FROM registry.gitlab.com/sentryoz/vinafa_laravel:build-up-v2
 
-RUN apk add --no-cache nginx wget
+ADD  ./  /web
 
-RUN mkdir -p /run/nginx
+WORKDIR /web
 
-COPY docker/nginx.conf /etc/nginx/nginx.conf
+EXPOSE 80
+RUN rm -rf composer.lock &&  php composer.phar install && php composer.phar dumpautoload
 
-RUN mkdir -p /app
-COPY . /app
-
-RUN sh -c "wget http://getcomposer.org/composer.phar && chmod a+x composer.phar && mv composer.phar /usr/local/bin/composer"
-RUN cd /app && \
-    /usr/local/bin/composer install 
-
-RUN chown -R www-data: /app
-
-CMD sh /app/docker/startup.sh
+CMD [ "php" , "artisan" , "serv" ,"--host=0.0.0.0" , "--port=80" ]
